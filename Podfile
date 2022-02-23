@@ -7,5 +7,6 @@ target 'OpenSeaAssets' do
 
   # Pods for OpenSeaAssets
   pod 'Alamofire', '~> 5.5.0'
+  pod 'SDWebImageSwiftUI'
 
 end
