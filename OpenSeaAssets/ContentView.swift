@@ -8,9 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var model = OpenSeaModel()
+    private var columnGrid: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ScrollView {
+            LazyVGrid(columns: columnGrid) {
+                ForEach(model.assets, id: \.self) { asset in
+                    VStack {
+                        AsyncImage(url: (asset.image_url ?? URL(string: ""))){ image in
+                            image
+                                .resizable()
+                                .scaledToFill()
+                        } placeholder: {
+                            ProgressView()
+                        }
+                        .cornerRadius(10)
+                        Text("\(asset.name)")
+                    }
+                }
+            }.onAppear() {
+                model.getAssets()
+            }
+        }
     }
 }
 

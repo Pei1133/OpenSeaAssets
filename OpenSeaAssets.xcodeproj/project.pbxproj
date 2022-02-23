@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		958FD9B59EF5E8B178421E7F /* Pods_OpenSeaAssets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FA720F9FCF58FD8C0CD5EF /* Pods_OpenSeaAssets.framework */; };
 		AFB6261C27C6299D00019179 /* OpenSeaAssetsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6261B27C6299D00019179 /* OpenSeaAssetsApp.swift */; };
 		AFB6261E27C6299D00019179 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6261D27C6299D00019179 /* ContentView.swift */; };
 		AFB6262027C629A400019179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB6261F27C629A400019179 /* Assets.xcassets */; };
 		AFB6262327C629A400019179 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB6262227C629A400019179 /* Preview Assets.xcassets */; };
+		AFB6263C27C641E100019179 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6263A27C641E100019179 /* Asset.swift */; };
+		AFB6264127C641ED00019179 /* NetworkServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6263E27C641ED00019179 /* NetworkServiceProvider.swift */; };
+		AFB6264227C641ED00019179 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6263F27C641ED00019179 /* NetworkService.swift */; };
+		AFB6264327C641ED00019179 /* OpenSeaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6264027C641ED00019179 /* OpenSeaAPI.swift */; };
+		AFB6264527C6420500019179 /* OpenSeaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6264427C6420500019179 /* OpenSeaModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23FA720F9FCF58FD8C0CD5EF /* Pods_OpenSeaAssets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenSeaAssets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABD68B1CF2FFD4597A1C493C /* Pods-OpenSeaAssets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenSeaAssets.release.xcconfig"; path = "Target Support Files/Pods-OpenSeaAssets/Pods-OpenSeaAssets.release.xcconfig"; sourceTree = "<group>"; };
 		AFB6261827C6299D00019179 /* OpenSeaAssets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenSeaAssets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB6261B27C6299D00019179 /* OpenSeaAssetsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSeaAssetsApp.swift; sourceTree = "<group>"; };
 		AFB6261D27C6299D00019179 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AFB6261F27C629A400019179 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFB6262227C629A400019179 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AFB6263A27C641E100019179 /* Asset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		AFB6263E27C641ED00019179 /* NetworkServiceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceProvider.swift; sourceTree = "<group>"; };
+		AFB6263F27C641ED00019179 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		AFB6264027C641ED00019179 /* OpenSeaAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenSeaAPI.swift; sourceTree = "<group>"; };
+		AFB6264427C6420500019179 /* OpenSeaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSeaModel.swift; sourceTree = "<group>"; };
+		E5A9051E145EABCEE7EA47A0 /* Pods-OpenSeaAssets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenSeaAssets.debug.xcconfig"; path = "Target Support Files/Pods-OpenSeaAssets/Pods-OpenSeaAssets.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +40,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				958FD9B59EF5E8B178421E7F /* Pods_OpenSeaAssets.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		866890313FF9E334FF78FB99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23FA720F9FCF58FD8C0CD5EF /* Pods_OpenSeaAssets.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AFB6260F27C6299D00019179 = {
 			isa = PBXGroup;
 			children = (
 				AFB6261A27C6299D00019179 /* OpenSeaAssets */,
 				AFB6261927C6299D00019179 /* Products */,
+				B53829F9AA340DF68B1F056A /* Pods */,
+				866890313FF9E334FF78FB99 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +76,8 @@
 		AFB6261A27C6299D00019179 /* OpenSeaAssets */ = {
 			isa = PBXGroup;
 			children = (
+				AFB6263D27C641ED00019179 /* Network */,
+				AFB6263827C641E100019179 /* Models */,
 				AFB6261B27C6299D00019179 /* OpenSeaAssetsApp.swift */,
 				AFB6261D27C6299D00019179 /* ContentView.swift */,
 				AFB6261F27C629A400019179 /* Assets.xcassets */,
@@ -67,6 +94,34 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		AFB6263827C641E100019179 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AFB6263A27C641E100019179 /* Asset.swift */,
+				AFB6264427C6420500019179 /* OpenSeaModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AFB6263D27C641ED00019179 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AFB6263E27C641ED00019179 /* NetworkServiceProvider.swift */,
+				AFB6263F27C641ED00019179 /* NetworkService.swift */,
+				AFB6264027C641ED00019179 /* OpenSeaAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B53829F9AA340DF68B1F056A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5A9051E145EABCEE7EA47A0 /* Pods-OpenSeaAssets.debug.xcconfig */,
+				ABD68B1CF2FFD4597A1C493C /* Pods-OpenSeaAssets.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +129,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFB6262627C629A500019179 /* Build configuration list for PBXNativeTarget "OpenSeaAssets" */;
 			buildPhases = (
+				F594351F696D5025794BDED4 /* [CP] Check Pods Manifest.lock */,
 				AFB6261427C6299D00019179 /* Sources */,
 				AFB6261527C6299D00019179 /* Frameworks */,
 				AFB6261627C6299D00019179 /* Resources */,
+				5633152C37A2A4A3803A0FC0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,11 +189,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5633152C37A2A4A3803A0FC0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenSeaAssets/Pods-OpenSeaAssets-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenSeaAssets/Pods-OpenSeaAssets-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenSeaAssets/Pods-OpenSeaAssets-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F594351F696D5025794BDED4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenSeaAssets-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AFB6261427C6299D00019179 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFB6264227C641ED00019179 /* NetworkService.swift in Sources */,
+				AFB6263C27C641E100019179 /* Asset.swift in Sources */,
+				AFB6264527C6420500019179 /* OpenSeaModel.swift in Sources */,
+				AFB6264327C641ED00019179 /* OpenSeaAPI.swift in Sources */,
+				AFB6264127C641ED00019179 /* NetworkServiceProvider.swift in Sources */,
 				AFB6261E27C6299D00019179 /* ContentView.swift in Sources */,
 				AFB6261C27C6299D00019179 /* OpenSeaAssetsApp.swift in Sources */,
 			);
@@ -263,6 +367,7 @@
 		};
 		AFB6262727C629A500019179 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5A9051E145EABCEE7EA47A0 /* Pods-OpenSeaAssets.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,6 +397,7 @@
 		};
 		AFB6262827C629A500019179 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABD68B1CF2FFD4597A1C493C /* Pods-OpenSeaAssets.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
