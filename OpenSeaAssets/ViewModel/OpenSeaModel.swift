@@ -13,8 +13,8 @@ class OpenSeaModel: ObservableObject {
     private var currentPage: Int = 0
     
     func getAssets() {
-        NetworkServiceProvider.shared.request(service: OpenSeaAPI.assets(currentPage: 0, limit: 20)) { [weak self] (result) in
         self.isLoading = true
+        NetworkServiceProvider.shared.request(service: OpenSeaAPI.assets(currentPage: currentPage, limit: 20)) { [weak self] (result) in
             switch result {
             case .success(let response):
                 guard let list = try? JSONDecoder().decode(AssetList.self, from: response.data) else {

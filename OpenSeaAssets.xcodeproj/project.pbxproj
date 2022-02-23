@@ -78,11 +78,11 @@
 		AFB6261A27C6299D00019179 /* OpenSeaAssets */ = {
 			isa = PBXGroup;
 			children = (
-				AFB6263D27C641ED00019179 /* Network */,
-				AFB6263827C641E100019179 /* Models */,
 				AFB6261B27C6299D00019179 /* OpenSeaAssetsApp.swift */,
-				AFB6261D27C6299D00019179 /* ContentView.swift */,
-				AFB6264627C65A1B00019179 /* AssetDetailView.swift */,
+				AFB6263D27C641ED00019179 /* Network */,
+				AFB6263827C641E100019179 /* Model */,
+				AFB6264927C65E7A00019179 /* ViewModel */,
+				AFB6264827C65E4800019179 /* View */,
 				AFB6261F27C629A400019179 /* Assets.xcassets */,
 				AFB6262127C629A400019179 /* Preview Content */,
 			);
@@ -97,13 +97,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		AFB6263827C641E100019179 /* Models */ = {
+		AFB6263827C641E100019179 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				AFB6263A27C641E100019179 /* Asset.swift */,
-				AFB6264427C6420500019179 /* OpenSeaModel.swift */,
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		AFB6263D27C641ED00019179 /* Network */ = {
@@ -114,6 +113,23 @@
 				AFB6264027C641ED00019179 /* OpenSeaAPI.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		AFB6264827C65E4800019179 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AFB6261D27C6299D00019179 /* ContentView.swift */,
+				AFB6264627C65A1B00019179 /* AssetDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AFB6264927C65E7A00019179 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AFB6264427C6420500019179 /* OpenSeaModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		B53829F9AA340DF68B1F056A /* Pods */ = {
