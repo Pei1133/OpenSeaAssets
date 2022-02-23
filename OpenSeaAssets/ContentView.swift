@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct ContentView: View {
     @ObservedObject var model = OpenSeaModel()
@@ -16,14 +17,10 @@ struct ContentView: View {
             LazyVGrid(columns: columnGrid) {
                 ForEach(model.assets, id: \.self) { asset in
                     VStack {
-                        AsyncImage(url: (asset.image_url ?? URL(string: ""))){ image in
-                            image
-                                .resizable()
-                                .scaledToFill()
-                        } placeholder: {
-                            ProgressView()
-                        }
-                        .cornerRadius(10)
+                        WebImage(url: (asset.image_url ?? URL(string: "")))
+                            .resizable()
+                            .scaledToFit()
+                            .cornerRadius(10)
                         Text("\(asset.name)")
                     }
                 }
