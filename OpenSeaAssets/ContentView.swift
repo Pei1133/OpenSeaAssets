@@ -27,9 +27,13 @@ struct ContentView: View {
                         Text("\(asset.name)")
                     }
                 }
-            }.onAppear() {
-                model.getAssets()
             }
+            if model.isLoading {
+                ProgressView()
+                    .frame(idealWidth: .infinity, maxWidth: .infinity, alignment: .center)
+            }
+        }.onAppear() {
+            model.getAssets()
         }
     }
 }
