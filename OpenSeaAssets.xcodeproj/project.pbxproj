@@ -17,6 +17,7 @@
 		AFB6264227C641ED00019179 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6263F27C641ED00019179 /* NetworkService.swift */; };
 		AFB6264327C641ED00019179 /* OpenSeaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6264027C641ED00019179 /* OpenSeaAPI.swift */; };
 		AFB6264527C6420500019179 /* OpenSeaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6264427C6420500019179 /* OpenSeaModel.swift */; };
+		AFB6264727C65A1B00019179 /* AssetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6264627C65A1B00019179 /* AssetDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		AFB6263F27C641ED00019179 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		AFB6264027C641ED00019179 /* OpenSeaAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenSeaAPI.swift; sourceTree = "<group>"; };
 		AFB6264427C6420500019179 /* OpenSeaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSeaModel.swift; sourceTree = "<group>"; };
+		AFB6264627C65A1B00019179 /* AssetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetDetailView.swift; sourceTree = "<group>"; };
 		E5A9051E145EABCEE7EA47A0 /* Pods-OpenSeaAssets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenSeaAssets.debug.xcconfig"; path = "Target Support Files/Pods-OpenSeaAssets/Pods-OpenSeaAssets.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +82,7 @@
 				AFB6263827C641E100019179 /* Models */,
 				AFB6261B27C6299D00019179 /* OpenSeaAssetsApp.swift */,
 				AFB6261D27C6299D00019179 /* ContentView.swift */,
+				AFB6264627C65A1B00019179 /* AssetDetailView.swift */,
 				AFB6261F27C629A400019179 /* Assets.xcassets */,
 				AFB6262127C629A400019179 /* Preview Content */,
 			);
@@ -242,6 +245,7 @@
 				AFB6264327C641ED00019179 /* OpenSeaAPI.swift in Sources */,
 				AFB6264127C641ED00019179 /* NetworkServiceProvider.swift in Sources */,
 				AFB6261E27C6299D00019179 /* ContentView.swift in Sources */,
+				AFB6264727C65A1B00019179 /* AssetDetailView.swift in Sources */,
 				AFB6261C27C6299D00019179 /* OpenSeaAssetsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
