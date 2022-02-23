@@ -22,6 +22,10 @@ struct ContentView: View {
                             .scaledToFit()
                             .cornerRadius(10)
                         Text("\(asset.name)")
+                    }.onAppear {
+                        if asset == model.assets.last {
+                            model.getAssets()
+                        }
                     }
                 }
             }

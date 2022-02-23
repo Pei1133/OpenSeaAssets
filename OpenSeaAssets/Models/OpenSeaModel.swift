@@ -10,6 +10,7 @@ import Foundation
 class OpenSeaModel: ObservableObject {
     @Published var assets: [Asset] = []
     @Published var isLoading = true
+    private var currentPage: Int = 0
     
     func getAssets() {
         NetworkServiceProvider.shared.request(service: OpenSeaAPI.assets(currentPage: 0, limit: 20)) { [weak self] (result) in
@@ -19,7 +20,8 @@ class OpenSeaModel: ObservableObject {
                 guard let list = try? JSONDecoder().decode(AssetList.self, from: response.data) else {
                     return
                 }
-                self?.assets = list.assets
+                self?.assets.append(contentsOf: list.assets)
+                self?.currentPage += list.assets.count
             case .error(let error):
                 print(error)
             }
