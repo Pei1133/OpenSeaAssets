@@ -3,7 +3,8 @@ ERC-721/ERC-1155 收藏品頁面
 
 ## Installation
   - `pod init`
-  -  Open the .xcworkspace file
+  - Open the .xcworkspace file
+  - Fill in **OpenSea API Key** and **Infura API Key**
 
 ## Design Pattern
   - MVVM + SwiftUI
@@ -14,6 +15,7 @@ ERC-721/ERC-1155 收藏品頁面
     - Show assets with Grid
     - Infinite scroll
     - Navigate to AssetDetail
+    - Get Ethereum Balance
 
   - AssetDetail
     - Show asset detail information (image, name and description) 
