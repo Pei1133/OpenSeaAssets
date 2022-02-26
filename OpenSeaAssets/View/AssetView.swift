@@ -9,7 +9,7 @@ import SwiftUI
 import SDWebImageSwiftUI
 
 struct AssetView: View {
-    @ObservedObject var model = OpenSeaModel()
+    @ObservedObject var model = AssetViewModel()
     private var columnGrid: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
     
     var body: some View {

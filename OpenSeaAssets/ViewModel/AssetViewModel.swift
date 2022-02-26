@@ -1,5 +1,5 @@
 //
-//  OpenSeaModel.swift
+//  AssetViewModel.swift
 //  OpenSeaAssets
 //
 //  Created by PeiChun on 2022/2/23.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class OpenSeaModel: ObservableObject {
+class AssetViewModel: ObservableObject {
     @Published var assets: [Asset] = []
     @Published var balance: String = "List"
     @Published var isLoading = true

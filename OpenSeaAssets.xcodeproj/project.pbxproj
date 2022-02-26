@@ -19,7 +19,7 @@
 		AFB6264127C641ED00019179 /* NetworkServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6263E27C641ED00019179 /* NetworkServiceProvider.swift */; };
 		AFB6264227C641ED00019179 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6263F27C641ED00019179 /* NetworkService.swift */; };
 		AFB6264327C641ED00019179 /* OpenSeaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6264027C641ED00019179 /* OpenSeaAPI.swift */; };
-		AFB6264527C6420500019179 /* OpenSeaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6264427C6420500019179 /* OpenSeaModel.swift */; };
+		AFB6264527C6420500019179 /* AssetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6264427C6420500019179 /* AssetViewModel.swift */; };
 		AFB6264727C65A1B00019179 /* AssetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6264627C65A1B00019179 /* AssetDetailView.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +38,7 @@
 		AFB6263E27C641ED00019179 /* NetworkServiceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceProvider.swift; sourceTree = "<group>"; };
 		AFB6263F27C641ED00019179 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		AFB6264027C641ED00019179 /* OpenSeaAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenSeaAPI.swift; sourceTree = "<group>"; };
-		AFB6264427C6420500019179 /* OpenSeaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSeaModel.swift; sourceTree = "<group>"; };
+		AFB6264427C6420500019179 /* AssetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetViewModel.swift; sourceTree = "<group>"; };
 		AFB6264627C65A1B00019179 /* AssetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetDetailView.swift; sourceTree = "<group>"; };
 		E5A9051E145EABCEE7EA47A0 /* Pods-OpenSeaAssets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenSeaAssets.debug.xcconfig"; path = "Target Support Files/Pods-OpenSeaAssets/Pods-OpenSeaAssets.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,7 +136,7 @@
 		AFB6264927C65E7A00019179 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				AFB6264427C6420500019179 /* OpenSeaModel.swift */,
+				AFB6264427C6420500019179 /* AssetViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -267,7 +267,7 @@
 				AFB6264227C641ED00019179 /* NetworkService.swift in Sources */,
 				AF7F8A3F27CA2D5200A1D78F /* EthereumAPI.swift in Sources */,
 				AFB6263C27C641E100019179 /* Asset.swift in Sources */,
-				AFB6264527C6420500019179 /* OpenSeaModel.swift in Sources */,
+				AFB6264527C6420500019179 /* AssetViewModel.swift in Sources */,
 				AFB6264327C641ED00019179 /* OpenSeaAPI.swift in Sources */,
 				AF7F8A4127CA66D400A1D78F /* EthBalance.swift in Sources */,
 				AF7F8A4327CA883400A1D78F /* APIKey.swift in Sources */,
