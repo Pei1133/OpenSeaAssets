@@ -8,7 +8,7 @@
 import Foundation
 
 enum OpenSeaAPI {
-    case assets(currentPage: Int, limit: Int = 20)
+    case assets(address: String = "0x960DE9907A2e2f5363646d48D7FB675Cd2892e91", currentPage: Int, limit: Int = 20)
 }
 
 extension OpenSeaAPI: NetworkService {
@@ -30,22 +30,22 @@ extension OpenSeaAPI: NetworkService {
         }
     }
     
-    var headers: [String : String]? {
-        return ["X-API-KEY": "5b294e9193d240e39eefc5e6e551ce83"]
+    var headers: [String: String]? {
+        return ["X-API-KEY": "\(APIKey.openSeaAPIKey)"]
     }
     
-    var parameters: [String : Any] {
+    var parameters: [String: Any] {
         switch self {
-        case .assets(let currentPage, let limit):
+        case .assets(let address, let currentPage, let limit):
             return [
-                "owner": "0x960DE9907A2e2f5363646d48D7FB675Cd2892e91",
+                "owner": "\(address)",
                 "limit": "\(limit)",
                 "offset": "\(currentPage)"
             ]
         }
     }
     
-    var timeout: TimeInterval{
+    var timeout: TimeInterval {
         return 15
     }
 
