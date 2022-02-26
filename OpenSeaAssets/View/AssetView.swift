@@ -39,10 +39,11 @@ struct AssetView: View {
                         .frame(idealWidth: .infinity, maxWidth: .infinity, alignment: .center)
                 }
             }.onAppear() {
+                model.getEthereumBalance()
                 model.getAssets()
             }
+            .navigationBarTitle(model.balance)
             .navigationBarTitleDisplayMode(.inline)
-            .navigationBarHidden(true)
         }
     }
 }
