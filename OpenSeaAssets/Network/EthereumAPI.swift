@@ -19,7 +19,7 @@ extension EthereumAPI: NetworkService {
     var path: String {
         switch self {
         case .getBalance:
-            return "/\(APIKey.ethereumAPIKey)"
+            return "/\(APIKey.infuraAPIKey)"
         }
     }
     

@@ -9,5 +9,5 @@ import Foundation
 
 struct APIKey {
     static let openSeaAPIKey = "Your OpenSea API Key"
-    static let ethereumAPIKey = "Your infura API Key"
+    static let infuraAPIKey = "Your infura API Key"
 }
