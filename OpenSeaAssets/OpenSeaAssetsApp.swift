@@ -11,7 +11,7 @@ import SwiftUI
 struct OpenSeaAssetsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AssetView()
         }
     }
 }

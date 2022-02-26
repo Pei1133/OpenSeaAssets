@@ -8,7 +8,7 @@
 import SwiftUI
 import SDWebImageSwiftUI
 
-struct ContentView: View {
+struct AssetView: View {
     @ObservedObject var model = OpenSeaModel()
     private var columnGrid: [GridItem] = Array(repeating: .init(.flexible()), count: 2)
     
@@ -49,6 +49,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        AssetView()
     }
 }

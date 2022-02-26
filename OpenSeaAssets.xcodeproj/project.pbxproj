@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		958FD9B59EF5E8B178421E7F /* Pods_OpenSeaAssets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FA720F9FCF58FD8C0CD5EF /* Pods_OpenSeaAssets.framework */; };
 		AFB6261C27C6299D00019179 /* OpenSeaAssetsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6261B27C6299D00019179 /* OpenSeaAssetsApp.swift */; };
-		AFB6261E27C6299D00019179 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6261D27C6299D00019179 /* ContentView.swift */; };
+		AFB6261E27C6299D00019179 /* AssetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6261D27C6299D00019179 /* AssetView.swift */; };
 		AFB6262027C629A400019179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB6261F27C629A400019179 /* Assets.xcassets */; };
 		AFB6262327C629A400019179 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB6262227C629A400019179 /* Preview Assets.xcassets */; };
 		AFB6263C27C641E100019179 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB6263A27C641E100019179 /* Asset.swift */; };
@@ -25,7 +25,7 @@
 		ABD68B1CF2FFD4597A1C493C /* Pods-OpenSeaAssets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenSeaAssets.release.xcconfig"; path = "Target Support Files/Pods-OpenSeaAssets/Pods-OpenSeaAssets.release.xcconfig"; sourceTree = "<group>"; };
 		AFB6261827C6299D00019179 /* OpenSeaAssets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenSeaAssets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB6261B27C6299D00019179 /* OpenSeaAssetsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSeaAssetsApp.swift; sourceTree = "<group>"; };
-		AFB6261D27C6299D00019179 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AFB6261D27C6299D00019179 /* AssetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetView.swift; sourceTree = "<group>"; };
 		AFB6261F27C629A400019179 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFB6262227C629A400019179 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AFB6263A27C641E100019179 /* Asset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 		AFB6264827C65E4800019179 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AFB6261D27C6299D00019179 /* ContentView.swift */,
+				AFB6261D27C6299D00019179 /* AssetView.swift */,
 				AFB6264627C65A1B00019179 /* AssetDetailView.swift */,
 			);
 			path = View;
@@ -260,7 +260,7 @@
 				AFB6264527C6420500019179 /* OpenSeaModel.swift in Sources */,
 				AFB6264327C641ED00019179 /* OpenSeaAPI.swift in Sources */,
 				AFB6264127C641ED00019179 /* NetworkServiceProvider.swift in Sources */,
-				AFB6261E27C6299D00019179 /* ContentView.swift in Sources */,
+				AFB6261E27C6299D00019179 /* AssetView.swift in Sources */,
 				AFB6264727C65A1B00019179 /* AssetDetailView.swift in Sources */,
 				AFB6261C27C6299D00019179 /* OpenSeaAssetsApp.swift in Sources */,
 			);
